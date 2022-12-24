@@ -14,7 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "typeRoots": ["./@types"],
+    "typeRoots": ["./@types", "./types/index.d.ts"],
     "baseUrl": "./",
     "paths": {
       "@assets/*": ["assets/*"],
