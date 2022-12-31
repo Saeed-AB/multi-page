@@ -7,7 +7,7 @@ export type PlanListTypes = {
   name: string;
   price: number;
   free: number;
-  icon: any;
+  icon: unknown;
 };
 
 type ListTypes = {

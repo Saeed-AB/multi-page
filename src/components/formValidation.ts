@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type FieldValidator = (
   value: any,
   values?: Record<string, any>

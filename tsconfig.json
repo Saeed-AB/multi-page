@@ -17,10 +17,10 @@
     "typeRoots": ["./@types", "./types/index.d.ts", "./node_modules/@types"],
     "baseUrl": ".",
     "paths": {
-      "src":["./src"],
-      "@/*":["src/*"]
+      "src": ["./src"],
+      "@/*": ["src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "./next.config.js"]
 }

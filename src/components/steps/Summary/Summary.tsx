@@ -2,18 +2,18 @@ import { Footer } from "src/components/Footer";
 import { useMultiStep } from "src/store/ContextProvider";
 import React from "react";
 import { useFormState } from "react-final-form";
-import { FormStateTypes } from "types/index.d";
 import { addList, calculatePrice, planList } from "src/UiHelper";
+import { FormStateTypes } from "@/types/index";
 
 const Summary: React.FC = () => {
   const { handleStep } = useMultiStep();
   const {
-    values: { active_plan, is_yearly, selectedOnes },
+    values: { active_plan , is_yearly, selectedOnes },
   } = useFormState<FormStateTypes>();
 
-  const activePlan = planList.find((item) => item.key === active_plan);
+  const activePlan = planList.find((item) => item.key === active_plan) ?? planList[0];
   const onesList = addList.filter((item) => selectedOnes.includes(item.name));
-  const price = calculatePrice(activePlan!.price, activePlan!.free, is_yearly);
+  const price = calculatePrice(activePlan.price , activePlan.free, is_yearly);
 
   let result = price;
   onesList.forEach((item) => {
@@ -32,7 +32,7 @@ const Summary: React.FC = () => {
           <div className="flex justify-between items-center">
             <div className="flex flex-col">
               <span className="text-[#1e3963] font-bold text-sm">
-                {`${activePlan?.name}(${is_yearly ? "Yearly" : "Monthly"})`}
+                {`${activePlan.name}(${is_yearly ? "Yearly" : "Monthly"})`}
               </span>
               <span
                 onClick={() => handleStep("selectPlan")}

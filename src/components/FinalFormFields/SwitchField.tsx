@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Switch } from "src/components/inputs";
 import React from "react";
-import { Field, FieldInputProps, FieldRenderProps } from "react-final-form";
+import { Field, FieldRenderProps } from "react-final-form";
 
 type InputTypes = React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,

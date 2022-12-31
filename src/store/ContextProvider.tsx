@@ -1,5 +1,5 @@
 import React from "react";
-import { CurrentStepTypes } from "types/index.d";
+import { CurrentStepTypes } from "@/types/index";
 
 type PropsTypes = {
   children: JSX.Element;
@@ -14,7 +14,7 @@ type ContextTypes = {
 
 const initVal = {
   currentStep: "personaInfo",
-  handleStep: (s: keyof CurrentStepTypes) => {},
+  handleStep: () => {},
 };
 
 const AppContext = React.createContext<ContextTypes>(initVal);

@@ -5,7 +5,7 @@ import { useForm, useFormState } from "react-final-form";
 import { Footer } from "src/components/Footer";
 import { calculatePrice, planList } from "src/UiHelper";
 import { SwitchField } from "src/components/FinalFormFields";
-import { FormStateTypes } from "types";
+import { FormStateTypes } from "@/types/index";
 
 const SelectPlan: React.FC = () => {
   const { change } = useForm();
@@ -35,20 +35,22 @@ const SelectPlan: React.FC = () => {
                     : "border-[#e4e3e7] bg-white"
                 )}
               >
-                {plan.icon}
-                <div className="ml-5 md:mt-7 md:ml-0">
-                  <p className="font-bold text-[#546375] text-sm">
-                    {plan.name}
-                  </p>
-                  <p className="text-sm font-semibold text-[#c1c2c6]">{`$${price}/${
-                    is_yearly ? "yr" : "mo"
-                  }`}</p>
-                  {is_yearly && (
-                    <p className="font-medium text-[#546375] text-xs">
-                      2 months free
+                <>
+                  {plan.icon}
+                  <div className="ml-5 md:mt-7 md:ml-0">
+                    <p className="font-bold text-[#546375] text-sm">
+                      {plan.name}
                     </p>
-                  )}
-                </div>
+                    <p className="text-sm font-semibold text-[#c1c2c6]">{`$${price}/${
+                      is_yearly ? "yr" : "mo"
+                    }`}</p>
+                    {is_yearly && (
+                      <p className="font-medium text-[#546375] text-xs">
+                        2 months free
+                      </p>
+                    )}
+                  </div>
+                </>
               </div>
             );
           })}

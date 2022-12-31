@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import { Field } from "react-final-form";
 import { FieldValidator } from "final-form";

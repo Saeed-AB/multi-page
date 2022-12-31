@@ -10,7 +10,7 @@ import ContextProvider from "src/store/ContextProvider";
 import { SideBar } from "src/components/SideBar";
 import Frame from "src/components/Frame";
 import { Form } from "react-final-form";
-import { CurrentStepTypes } from "types/index.d";
+import { CurrentStepTypes } from "@/types/index";
 
 type StepsTypes = {
   personaInfo: React.FC;
@@ -55,11 +55,18 @@ const initialValues = {
   active_plan: "arcade",
   is_yearly: false,
   selectedOnes: [],
-}
+};
+
+type CurrentTypes =
+  | "personaInfo"
+  | "selectPlan"
+  | "addOns"
+  | "summary"
+  | "confirm";
 
 export default function Home() {
   const [currentStep, setCurrentStep] =
-    React.useState<keyof CurrentStepTypes>("personaInfo");
+    React.useState<CurrentTypes>("personaInfo");
 
   const StepComponent = steps[currentStep];
   const componentTitle = titles[currentStep];
@@ -80,10 +87,7 @@ export default function Home() {
             title={componentTitle.title}
             description={componentTitle.description}
           >
-            <Form
-              onSubmit={onSubmit}
-              initialValues={initialValues}
-            >
+            <Form onSubmit={onSubmit} initialValues={initialValues}>
               {({ handleSubmit }) => (
                 <form onSubmit={handleSubmit} className="h-full">
                   <StepComponent />

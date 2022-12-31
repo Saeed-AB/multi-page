@@ -3,7 +3,7 @@ import { Checkbox } from "src/components/inputs";
 import clsx from "clsx";
 import React from "react";
 import { useForm, useFormState } from "react-final-form";
-import { FormStateTypes } from "types";
+import { FormStateTypes } from "@/types/index";
 import { addList, calculatePrice } from "src/UiHelper";
 
 const AddOns: React.FC = () => {
