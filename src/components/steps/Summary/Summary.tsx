@@ -8,12 +8,13 @@ import { FormStateTypes } from "@/types/index";
 const Summary: React.FC = () => {
   const { handleStep } = useMultiStep();
   const {
-    values: { active_plan , is_yearly, selectedOnes },
+    values: { active_plan, is_yearly, selectedOnes },
   } = useFormState<FormStateTypes>();
 
-  const activePlan = planList.find((item) => item.key === active_plan) ?? planList[0];
+  const activePlan =
+    planList.find((item) => item.key === active_plan) ?? planList[0];
   const onesList = addList.filter((item) => selectedOnes.includes(item.name));
-  const price = calculatePrice(activePlan.price , activePlan.free, is_yearly);
+  const price = calculatePrice(activePlan.price, activePlan.free, is_yearly);
 
   let result = price;
   onesList.forEach((item) => {

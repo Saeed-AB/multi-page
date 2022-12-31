@@ -16,7 +16,7 @@ const Footer = ({ disabled }: { disabled?: boolean }) => {
 
   const onClickNext = () => {
     if (currentStep === "summary") {
-      handleStep('confirm');
+      handleStep("confirm");
     } else {
       const nextStep = pageSteps[currentStepIndex + 1].key;
       handleStep(nextStep);

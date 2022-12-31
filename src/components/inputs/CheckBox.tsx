@@ -1,14 +1,17 @@
 import React from "react";
 
-type InputTypes = Omit<React.DetailedHTMLProps<
-  React.InputHTMLAttributes<HTMLInputElement>,
-  HTMLInputElement
->, 'value'>;
+type InputTypes = Omit<
+  React.DetailedHTMLProps<
+    React.InputHTMLAttributes<HTMLInputElement>,
+    HTMLInputElement
+  >,
+  "value"
+>;
 
 type CheckBoxTypes = InputTypes & {
   label: string;
   description?: string;
-  value: boolean | undefined
+  value: boolean | undefined;
 };
 
 const CheckBox = ({ label, value, description, ...rest }: CheckBoxTypes) => {

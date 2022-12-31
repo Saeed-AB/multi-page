@@ -1,10 +1,10 @@
 import { CurrentStepTypes } from "@/types/index";
 
 type pageListTypes = {
-  title: string,
-  description: string,
-  key: keyof CurrentStepTypes,
-}
+  title: string;
+  description: string;
+  key: keyof CurrentStepTypes;
+};
 
 export const pageSteps: pageListTypes[] = [
   { title: "STEP 1", description: "YOUR INFO", key: "personaInfo" },

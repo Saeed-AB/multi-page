@@ -28,14 +28,16 @@ const AddOns: React.FC = () => {
       <div className="flex flex-col gap-3">
         {addList.map((item, i) => {
           const price = calculatePrice(item.price, 2, is_yearly);
-          const isChecked = selectedOnes.includes(item.name); 
+          const isChecked = selectedOnes.includes(item.name);
 
           return (
             <div
               key={i}
               className={clsx(
                 "flex justify-between w-full border-2 p-4 rounded-md cursor-pointer items-center hover:bg-[#f8f9fe]",
-                isChecked ? "bg-[#f8f9fe] border-[#827cb3]" : "bg-[#fff] border-[#e4e3e7]"
+                isChecked
+                  ? "bg-[#f8f9fe] border-[#827cb3]"
+                  : "bg-[#fff] border-[#e4e3e7]"
               )}
               onClick={() => handleChange(item?.name)}
             >

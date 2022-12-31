@@ -1,3 +1,3 @@
-import AddOns from './AddOns'
+import AddOns from "./AddOns";
 
 export default AddOns;

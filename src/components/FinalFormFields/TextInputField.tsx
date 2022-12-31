@@ -14,7 +14,7 @@ type TextInputFieldTypes = InputTypes & {
   name: string;
   label: string;
   validate?: FieldValidator<any>;
-  parse?: ((value: any, name: string) => any) | undefined
+  parse?: ((value: any, name: string) => any) | undefined;
 };
 
 const TextInputField = ({

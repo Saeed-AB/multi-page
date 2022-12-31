@@ -1,7 +1,11 @@
 import { TextInputField } from "src/components/FinalFormFields";
 import { Footer } from "src/components/Footer";
 import { formatPhoneNumber } from "src/components/formNormlize";
-import { composeValidators, email, required } from "src/components/formValidation";
+import {
+  composeValidators,
+  email,
+  required,
+} from "src/components/formValidation";
 import React from "react";
 import { useField } from "react-final-form";
 

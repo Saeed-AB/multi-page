@@ -1,3 +1,3 @@
-import SelectPlan from './SelectPlan'
+import SelectPlan from "./SelectPlan";
 
 export default SelectPlan;

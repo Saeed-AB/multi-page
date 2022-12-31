@@ -1,3 +1,3 @@
-import PersonaInfo from './PersonaInfo';
+import PersonaInfo from "./PersonaInfo";
 
-export default PersonaInfo
+export default PersonaInfo;
