@@ -1,4 +1,4 @@
-import { CurrentStepTypes } from "types/index.d";
+import { CurrentStepTypes } from "@/types/index";
 
 type pageListTypes = {
   title: string,
