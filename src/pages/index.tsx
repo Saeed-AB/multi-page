@@ -5,10 +5,10 @@ import {
   PersonaInfo,
   SelectPlan,
   Summary,
-} from "@components/steps";
-import ContextProvider from "@store/ContextProvider";
-import { SideBar } from "@components/SideBar";
-import Frame from "@components/Frame";
+} from "src/components/steps";
+import ContextProvider from "src/store/ContextProvider";
+import { SideBar } from "src/components/SideBar";
+import Frame from "src/components/Frame";
 import { Form } from "react-final-form";
 import { CurrentStepTypes } from "types/index.d";
 

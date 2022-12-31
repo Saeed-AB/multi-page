@@ -1,4 +1,4 @@
-import { Switch } from "@components/inputs";
+import { Switch } from "src/components/inputs";
 import React from "react";
 import { Field, FieldInputProps, FieldRenderProps } from "react-final-form";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AdvancedIcon, ArcadeIcon, ProIcon } from "@assets/images";
+import { AdvancedIcon, ArcadeIcon, ProIcon } from "src/assets/images";
 
 export type PlanListTypes = {
   key: string;

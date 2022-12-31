@@ -2,9 +2,9 @@ import React from "react";
 import clsx from "clsx";
 import { useForm, useFormState } from "react-final-form";
 
-import { Footer } from "@components/Footer";
-import { calculatePrice, planList } from "UiHelper";
-import { SwitchField } from "@components/FinalFormFields";
+import { Footer } from "src/components/Footer";
+import { calculatePrice, planList } from "src/UiHelper";
+import { SwitchField } from "src/components/FinalFormFields";
 import { FormStateTypes } from "types";
 
 const SelectPlan: React.FC = () => {

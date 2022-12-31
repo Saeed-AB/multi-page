@@ -1,7 +1,7 @@
 import React from "react";
 import { Field } from "react-final-form";
 import { FieldValidator } from "final-form";
-import { TextInput } from "@components/inputs";
+import { TextInput } from "src/components/inputs";
 
 type InputTypes = React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,

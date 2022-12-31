@@ -1,4 +1,4 @@
-import { Checkbox } from "@components/inputs";
+import { Checkbox } from "src/components/inputs";
 import React from "react";
 import { Field } from "react-final-form";
 

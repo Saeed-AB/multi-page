@@ -1,10 +1,10 @@
-import { Footer } from "@components/Footer";
-import { Checkbox } from "@components/inputs";
+import { Footer } from "src/components/Footer";
+import { Checkbox } from "src/components/inputs";
 import clsx from "clsx";
 import React from "react";
 import { useForm, useFormState } from "react-final-form";
 import { FormStateTypes } from "types";
-import { addList, calculatePrice } from "UiHelper";
+import { addList, calculatePrice } from "src/UiHelper";
 
 const AddOns: React.FC = () => {
   const { change } = useForm();

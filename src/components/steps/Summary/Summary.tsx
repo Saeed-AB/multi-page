@@ -1,9 +1,9 @@
-import { Footer } from "@components/Footer";
-import { useMultiStep } from "@store/ContextProvider";
+import { Footer } from "src/components/Footer";
+import { useMultiStep } from "src/store/ContextProvider";
 import React from "react";
 import { useFormState } from "react-final-form";
 import { FormStateTypes } from "types/index.d";
-import { addList, calculatePrice, planList } from "UiHelper";
+import { addList, calculatePrice, planList } from "src/UiHelper";
 
 const Summary: React.FC = () => {
   const { handleStep } = useMultiStep();

@@ -1,7 +1,7 @@
 import React from "react";
 import clsx from "clsx";
-import { useMultiStep } from "@store/ContextProvider";
-import { pageSteps } from "@components/helper";
+import { useMultiStep } from "src/store/ContextProvider";
+import { pageSteps } from "src/components/helper";
 
 const SideBar = () => {
   const { currentStep } = useMultiStep();

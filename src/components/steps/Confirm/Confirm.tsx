@@ -1,5 +1,5 @@
 import React from "react";
-import { ThankYouIcon } from "@assets/images";
+import { ThankYouIcon } from "src/assets/images";
 
 const Confirm: React.FC = () => {
   return (

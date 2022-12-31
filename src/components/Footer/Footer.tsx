@@ -1,7 +1,7 @@
 import React from "react";
-import { useMultiStep } from "@store/ContextProvider";
+import { useMultiStep } from "src/store/ContextProvider";
 import clsx from "clsx";
-import { pageSteps } from "@components/helper";
+import { pageSteps } from "src/components/helper";
 
 const Footer = ({ disabled }: { disabled?: boolean }) => {
   const { currentStep, handleStep } = useMultiStep();
